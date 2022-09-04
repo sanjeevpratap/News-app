@@ -1,0 +1,11 @@
+touch .gitignore
+git config --global user.name "sanjeev pratap"
+git config --global user.email""
+git init
+git .add
+git commit -m "Initial Comment"
+git status #just for see
+ssh-keygen -t ed25519 -C "sanjeevpratap99209920@gmail.com"
+ clip < ~/.ssh/id_ed25519.pub #add to github account
+git remote add origin git@github.com:sanjeevpratap/News-app.git #ssh 
+git push origin master
