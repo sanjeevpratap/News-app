@@ -3,7 +3,7 @@ import './App.css';
 import React, { Component } from 'react'
 import Navbar from './component/Navbar';
 import News from './component/News';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 
 export default class App extends Component {
@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <Routes>
             <Route exact  key="general" path='/'element={<News pageSize={9} country="us" category="general" />} />
@@ -27,7 +27,7 @@ export default class App extends Component {
 
           {/* <News  pageSize={9} country="us" category="science"/> */}
 
-        </BrowserRouter>
+        </HashRouter>
         {/* Hello my first class based compponent {this.c} */}
       </div>
     )
